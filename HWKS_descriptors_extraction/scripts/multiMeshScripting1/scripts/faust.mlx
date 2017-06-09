@@ -1,0 +1,5 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Select non Manifold Edges "/>
+ <filter name="Delete Selected Faces and Vertices"/>
+</FilterScript>

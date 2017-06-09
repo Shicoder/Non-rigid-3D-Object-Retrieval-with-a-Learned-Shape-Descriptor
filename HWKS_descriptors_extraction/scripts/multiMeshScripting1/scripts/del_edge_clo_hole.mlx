@@ -1,0 +1,11 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Select non Manifold Edges "/>
+ <filter name="Delete Selected Faces and Vertices"/>
+ <filter name="Close Holes">
+  <Param name="MaxHoleSize" tooltip="The size is expressed as number of edges composing the hole boundary" description="Max size to be closed " value="2000" type="RichInt"/>
+  <Param name="Selected" tooltip="Only the holes with at least one of the boundary faces selected are closed" description="Close holes with selected faces" value="false" type="RichBool"/>
+  <Param name="NewFaceSelected" tooltip="After closing a hole the faces that have been created are left selected. Any previous selection is lost. Useful for example for smoothing the newly created holes." description="Select the newly created faces" value="true" type="RichBool"/>
+  <Param name="SelfIntersection" tooltip="When closing an holes it tries to prevent the creation of faces that intersect faces adjacent to the boundary of the hole. It is an heuristic, non intersetcting hole filling can be NP-complete." description="Prevent creation of selfIntersecting faces" value="true" type="RichBool"/>
+ </filter>
+</FilterScript>
